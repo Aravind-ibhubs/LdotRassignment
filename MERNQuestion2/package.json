@@ -1,0 +1,14 @@
+{
+  "name": "mernquestion2",
+  "version": "1.0.0",
+  "main": "expressQues2.js",
+  "scripts": {
+    "test": "echo \"Error: Yes test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

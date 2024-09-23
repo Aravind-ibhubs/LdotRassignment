@@ -3,6 +3,7 @@ var cor = require("cors");
 var mongoose = require('mongoose');
 require("dotenv").config();
 const routes = require('./routes/routes');
+const posts = require('./routes/posts');
 
 const port = 9000;
 
@@ -23,6 +24,7 @@ const app = express();
 app.use(cor());
 app.use(express.json());
 app.use("/users", routes);
+app.use("/posts", posts);
 
 
 app.listen(port, () => {

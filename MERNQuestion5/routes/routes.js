@@ -19,5 +19,27 @@ router.get("/getByEmail", async(req,res) => {
     }
 })
 
+router.post("/newUser", async(req, res) => {
+    const newData = new dataScheme({
+        "name" : req.body.name,
+        "email": req.body.email,
+        "age": req.body.age
+    });
+    try{
+        const newDataSaved = await newData.save();
+        res.status(200).json(newDataSaved);
+    } catch(err) {
+        res.status(400).json({"message" : "Please try after some time"});
+    }
+})
+
+router.get("/getAll", async(req, res) => {
+    try {
+        const data = await dataScheme.find();
+        res.status(200).json(data);
+    } catch(err) {
+        res.status(400).json({"message" :"Please try after some time"});
+    }
+})
 
 module.exports = router;

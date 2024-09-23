@@ -1,0 +1,61 @@
+table  {
+    border: 1px solid;
+    width: 50%;
+    align-self: center;
+}
+  
+th, td {
+    border: 1px dotted;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+th {
+    background-color: aquamarine;
+}
+  
+tr:nth-child(even) {
+    background-color: chartreuse;
+}
+  
+tr:hover {
+    background-color: crimson;
+    color: azure;
+}
+  
+caption {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: larger;
+    color: brown;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.table-container-button {
+    width: 14%;
+    margin-top: 10px;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: aqua;
+    border: 0px;
+}
+
+.table-container-button:hover {
+    background-color: black;
+    color: beige;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 85%;
+    }
+}
+
+
+@media  screen and (max-width: 992px) and (min-width: 768px) {
+    table {
+        width: 60%;
+    }
+}

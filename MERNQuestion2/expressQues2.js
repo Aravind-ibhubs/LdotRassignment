@@ -1,88 +1,91 @@
 var express = require('express');
+var cors = require('cors');
+
 var app = express();
+app.use(cors())
 var port = 2000;
 
 const userLisr = [
     {
-        "id" : 1,
+        "id" : "ERP123",
         "name" : "Agastya",
         "gender" : "Male",
         "age" : 23
     },
     {
-        "id" : 2,
+        "id" : "ERP92",
         "name" : "Vedamshi",
         "gender" : "Female",
         "age" : 13
     },
     {
-        "id" : 3,
+        "id" : "ERP125",
         "name" : "Arya Vardhan",
         "gender" : "Male",
         "age" : 56
     },
     {
-        "id" : 4,
+        "id" : "ERP321",
         "name" : "Meri James",
         "gender" : "Male",
         "age" : 35
     },
     {
-        "id" : 5,
+        "id" : "ERP462",
         "name" : "Jointhan",
         "gender" : "Male",
         "age" : 69
     },
     {
-        "id" : 6,
+        "id" : "ERP912",
         "name" : "Vana mali",
         "gender" : "Male",
         "age" : 57
     },
     {
-        "id" : 7,
+        "id" : "EPR350",
         "name" : "Chi-shi",
         "gender" : "Female",
         "age" : 64
     },
     {
-        "id" : 8,
+        "id" : "ERP009",
         "name" : "Satha vahi",
         "gender" : "Female",
         "age" : 46
     },
     {
-        "id" : 9,
+        "id" : "ERP276",
         "name" : "Sahiti",
         "gender" : "Female",
         "age" : 58
     },
     {
-        "id" : 10,
+        "id" : "ERP970",
         "name" : "Ashva",
         "gender" : "Male",
         "age" : 203
     },
     {
-        "id" : 11,
+        "id" : "ERP005",
         "name" : "Mahema",
         "gender" : "Male",
         "age" : 67
     },
     {
-        "id" : 12,
+        "id" : "ERP100",
         "name" : "Hima",
         "gender" : "Male",
         "age" : 64
     },
     {
-        "id" : 13,
+        "id" : "ERP650",
         "name" : "Choma",
         "gender" : "Female",
         "age" : 39
     },
     {
-        "id" : 17,
+        "id" : "ERP701",
         "name" : "Rama",
         "gender" : "Male",
         "age" : 62
